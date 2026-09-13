@@ -11,6 +11,11 @@
 					"slug": "base"
 				},
 				{
+					"color": "#444444",
+					"name": "Text",
+					"slug": "text"
+				},
+				{
 					"color": "#0057a4",
 					"name": "Contrast",
 					"slug": "contrast"
