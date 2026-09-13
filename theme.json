@@ -12,8 +12,8 @@
 				},
 				{
 					"color": "#444444",
-					"name": "Text",
-					"slug": "text"
+					"name": "Highlight",
+					"slug": "highlight"
 				},
 				{
 					"color": "#0057a4",
@@ -104,21 +104,18 @@
 				}
 			}
 		},
-		"color": {
-			"text": "var(--wp--preset--color--text)"
-		},
 		"elements": {
-			"h1": {
-				"color": {
-					"text": "var(--wp--preset--color--text)"
-				}
-			},
-			"heading": {
-				"color": {
-					"text": "var(--wp--preset--color--text)"
-				}
-			},
 			"link": {
+				":focus": {
+					"color": {
+						"text": "var(--wp--preset--color--hover)"
+					}
+				},
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--hover)"
+					}
+				},
 				"color": {
 					"text": "var(--wp--preset--color--primary)"
 				}
