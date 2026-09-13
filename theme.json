@@ -11,6 +11,11 @@
 					"slug": "base"
 				},
 				{
+					"color": "#444444",
+					"name": "Text",
+					"slug": "text"
+				},
+				{
 					"color": "#0057a4",
 					"name": "Contrast",
 					"slug": "contrast"
@@ -80,6 +85,45 @@
 			]
 		},
 		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"blocks": {
+			"core/post-title": {
+				"spacing": {
+					"margin": {
+						"bottom": "0"
+					},
+					"padding": {
+						"bottom": "0"
+					}
+				},
+				"typography": {
+					"letterSpacing": "1px",
+					"lineHeight": "1.5",
+					"textDecoration": "none"
+				}
+			}
+		},
+		"color": {
+			"text": "var(--wp--preset--color--text)"
+		},
+		"elements": {
+			"h1": {
+				"color": {
+					"text": "var(--wp--preset--color--text)"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var(--wp--preset--color--text)"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				}
+			}
+		}
 	},
 	"templateParts": [
 		{
