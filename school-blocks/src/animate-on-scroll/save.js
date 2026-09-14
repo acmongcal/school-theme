@@ -4,7 +4,7 @@
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps,InnerBlocks } from '@wordpress/block-editor';
 
 /**
  * The save function defines the way in which the different attributes should
@@ -15,14 +15,13 @@ import { useBlockProps } from '@wordpress/block-editor';
  *
  * @return {Element} Element to render.
  */
-export default function save({attributes, innerBlocks }) {
-	let { className, ...rest } = useBlockProps.save();
 
-    const numberOfInnerBlocks = innerBlocks?.length;
-    if ( numberOfInnerBlocks > 1 ) {
-        className = className + ( className ? ' ' : '' ) + 'more-than-one';
-    };
-    const blockProps =  { ...rest, className };
+export default function save( { attributes } ) {
+    const { animation } = attributes;
 
-    return <div { ...blockProps }>{ attributes.content }</div>;
+    return (
+        <div { ...useBlockProps.save( { 'data-aos': animation } ) }>
+            <InnerBlocks.Content />
+        </div>
+    );
 }
