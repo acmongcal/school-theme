@@ -8,7 +8,7 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'Animate on Scroll',
 		'category' => 'widgets',
-		'icon' => 'calendar',
+		'icon' => 'external',
 		'description' => 'Wrap any block to animate when scrolled into the viewport.',
 		'example' => array(
 			
