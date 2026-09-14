@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "school-blocks/animate-on-scroll",
+  "version": "0.1.0",
+  "title": "Animate on Scroll",
+  "category": "widgets",
+  "icon": "external",
+  "description": "Wrap any block to animate when scrolled into the viewport.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "animation": {
+      "type": "string",
+      "default": "fade"
+    }
+  },
+  "textdomain": "animate-on-scroll",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
