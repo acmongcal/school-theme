@@ -3,7 +3,7 @@ function school_enqueues() {
 
     //Load normalize.css
     wp_enqueue_style( 
-        'mindset-normalize', 
+        'school-normalize', 
         get_theme_file_uri( 'assets/css/normalize.css'), 
         array(), 
         '12.1.0'
@@ -12,7 +12,7 @@ function school_enqueues() {
 	// Load style.css on the front-end
 	// Parameters: Unique handle, Source, Dependencies, Version number, Media
 	wp_enqueue_style( 
-		'mindset-style',
+		'school-style',
 		get_stylesheet_uri(),
 		array(),
 		wp_get_theme()->get( 'Version' ),
