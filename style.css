@@ -14,3 +14,50 @@ Text Domain: school-theme
 Update URI: false
 */
 
+.wp-block-school-blocks-staff-posts article img{
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1;
+    width: 20rem;
+    height: auto;
+}
+.wp-block-school-blocks-staff-posts article li{
+    list-style: none;
+}
+
+.wp-block-school-blocks-staff-posts article a{
+    color: var(--wp--preset--color--base);
+}
+
+.wp-block-school-blocks-staff-posts article {
+    color: var(--wp--preset--color--base);
+    background-color: var(--wp--preset--color--primary);
+    box-shadow: 6px 6px 0px -3px var(--wp--preset--color--base), 6px 6px 0px 0 var(--wp--preset--color--accent);
+    padding: 2.25rem;
+    margin: 0 auto;
+}
+
+
+.staff-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+@media (max-width:820px){
+    .staff-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (max-width:400px){
+    .wp-block-school-blocks-staff-posts article img{
+        border-radius: 50%;
+        object-fit: cover;
+        aspect-ratio: 1;
+        width: 13rem;
+        height: auto;
+    }
+}

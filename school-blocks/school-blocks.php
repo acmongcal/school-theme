@@ -93,16 +93,19 @@ function school_render_staff_posts( $attributes ) {
 				);
 				$query = new WP_Query( $args );
 				if ( $query -> have_posts() ) {
+					echo "<div class='staff-container'>";
 					while( $query -> have_posts() ) {
 						$query -> the_post();
 		?>
 					<article id = "<?php echo esc_attr(get_the_ID()); ?>">
 					<?php
+							echo get_the_post_thumbnail();
 							echo '<h3>' .esc_html(get_the_title()). '</h3>';
 							echo esc_html(the_content());
 						echo '</article>';
 				
 					}
+					echo '</div>';
 					wp_reset_postdata(); 
 				}
 			}
