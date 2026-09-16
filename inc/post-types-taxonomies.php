@@ -172,6 +172,12 @@ function school_register_taxonomies(){
         'show_admin_column' => true,
         'hierarchical'      => true,
         'rewrite'           => array( 'slug' => 'staff-department' ),
+        'capabilities' => array(
+			'manage_terms'	=>	'manage_categories',
+			'edit_terms'	=>	'manage_categories',
+			'delete_terms'	=>	'manage_categories',
+			'assign_terms'	=>	'edit_posts',
+		)
     );
     register_taxonomy( 'fwd-staff-department', array( 'fwd-staff' ), $args );
 
