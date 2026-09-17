@@ -59,3 +59,24 @@ function mytheme_enqueue_lightgallery()
 	}
 }
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_lightgallery');
+
+function mytheme_setup()
+{
+
+	add_theme_support('post-thumbnails');
+
+	// Custom image sizes
+	add_image_size('student-large', 800, 600, true);
+	add_image_size('student-small', 400, 300, true);
+}
+add_action('after_setup_theme', 'mytheme_setup');
+
+function mytheme_custom_image_sizes($sizes)
+{
+
+	$sizes['student-large'] = 'Student Large';
+	$sizes['student-small'] = 'Student Small';
+
+	return $sizes;
+}
+add_filter('image_size_names_choose', 'mytheme_custom_image_sizes');
