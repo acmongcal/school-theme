@@ -207,6 +207,9 @@
 				}
 			}
 		},
+		"color": {
+			"text": "var(--wp--preset--color--highlight)"
+		},
 		"elements": {
 			"button": {
 				"color": {
