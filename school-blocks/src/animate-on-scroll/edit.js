@@ -35,7 +35,8 @@ export default function Edit( { attributes, setAttributes } ) {
 								{label: 'Slide Up', value:'slide-up'},
 								{label: 'Slide Down', value:'slide-down'},
 								{label: 'Slide Left', value:'slide-left'},
-								{label: 'Slide Right', value:'slide-right'}
+								{label: 'Slide Right', value:'slide-right'},
+								{label: 'Zoom In', value:'zoom-in'}
 							]
 						}
 						onChange={ ( value ) => setAttributes( { animation: value} ) }
