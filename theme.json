@@ -59,6 +59,109 @@
 					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
 					"name": "System Font",
 					"slug": "system-font"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Open Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/open-sans/open-sans-300-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Open Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/open-sans/open-sans-400-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Open Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/open-sans/open-sans-500-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Open Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/open-sans/open-sans-600-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Open Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/open-sans/open-sans-700-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Open Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/open-sans/open-sans-800-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Open Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/open-sans/open-sans-300-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Open Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/open-sans/open-sans-400-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Open Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/open-sans/open-sans-500-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Open Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/open-sans/open-sans-600-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Open Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/open-sans/open-sans-700-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Open Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/open-sans/open-sans-800-italic.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Open Sans\", sans-serif",
+					"name": "Open Sans",
+					"slug": "open-sans"
 				}
 			],
 			"fontSizes": [
@@ -105,6 +208,19 @@
 			}
 		},
 		"elements": {
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--accent)",
+					"text": "var(--wp--preset--color--base)"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--open-sans)",
+					"fontStyle": "normal",
+					"fontWeight": "400"
+				}
+			},
 			"link": {
 				":focus": {
 					"color": {
@@ -120,6 +236,9 @@
 					"text": "var(--wp--preset--color--primary)"
 				}
 			}
+		},
+		"typography": {
+			"fontSize": "var(--wp--preset--font-size--medium)"
 		}
 	},
 	"templateParts": [
