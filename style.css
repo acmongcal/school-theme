@@ -44,7 +44,7 @@ Update URI: false
     gap: 1rem;
 }
 
-body:has(.aos-animate) {
+body:has(.wp-block-school-blocks-animate-on-scroll) {
   overflow-x: hidden;
 }
 
