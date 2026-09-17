@@ -67,8 +67,8 @@ add_action('after_setup_theme', 'school_setup');
 function school_add_custom_image_sizes($size_names)
 {
 	$new_sizes = array(
-		'Student Large' => __('800x600', 'school-theme'),
-		'Student Small' => __('400x300', 'school-theme'),
+		'student-large' => __('Student Large', 'school-theme'),
+		'student-small' => __('Student Small', 'school-theme'),
 	);
 	return array_merge($size_names, $new_sizes);
 }
