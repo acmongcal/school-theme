@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   galleries.forEach(function (gallery) {
     lightGallery(gallery, {
       selector: "a",
-      download: false,
     });
   });
 });
