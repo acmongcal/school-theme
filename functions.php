@@ -29,7 +29,7 @@ require get_theme_file_path() . '/school-blocks/school-blocks.php';
  */
 require get_template_directory() . '/inc/post-types-taxonomies.php';
 
-function mytheme_enqueue_lightgallery()
+function school_enqueue_lightgallery()
 {
 
 	if (is_front_page()) {
@@ -58,25 +58,25 @@ function mytheme_enqueue_lightgallery()
 		);
 	}
 }
-add_action('wp_enqueue_scripts', 'mytheme_enqueue_lightgallery');
+add_action('wp_enqueue_scripts', 'school_enqueue_lightgallery');
 
-function mytheme_setup()
+function school_setup()
 {
 
-	add_theme_support('post-thumbnails');
+	add_editor_style(get_stylesheet_uri());
 
 	// Custom image sizes
 	add_image_size('student-large', 800, 600, true);
 	add_image_size('student-small', 400, 300, true);
 }
-add_action('after_setup_theme', 'mytheme_setup');
+add_action('after_setup_theme', 'school_setup');
 
-function mytheme_custom_image_sizes($sizes)
+function school_add_custom_image_sizes($size_names)
 {
-
-	$sizes['student-large'] = 'Student Large';
-	$sizes['student-small'] = 'Student Small';
-
-	return $sizes;
+	$new_sizes = array(
+		'800x600' => __('Student Large', 'school-theme'),
+		'400x300' => __('Student Small', 'school-theme'),
+	);
+	return array_merge($size_names, $new_sizes);
 }
-add_filter('image_size_names_choose', 'mytheme_custom_image_sizes');
+add_filter('image_size_names_choose', 'school_add_custom_image_sizes');
