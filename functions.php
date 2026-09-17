@@ -21,13 +21,6 @@ function school_enqueues()
 	);
 }
 add_action('wp_enqueue_scripts', 'school_enqueues');
-// Load custom blocks.
-require get_theme_file_path() . '/school-blocks/school-blocks.php';
-
-/**
- * Custom Post Types & Custom Taxonomies
- */
-require get_template_directory() . '/inc/post-types-taxonomies.php';
 
 function school_enqueue_lightgallery()
 {
@@ -74,9 +67,18 @@ add_action('after_setup_theme', 'school_setup');
 function school_add_custom_image_sizes($size_names)
 {
 	$new_sizes = array(
-		'800x600' => __('Student Large', 'school-theme'),
-		'400x300' => __('Student Small', 'school-theme'),
+		'Student Large' => __('800x600', 'school-theme'),
+		'Student Small' => __('400x300', 'school-theme'),
 	);
 	return array_merge($size_names, $new_sizes);
 }
 add_filter('image_size_names_choose', 'school_add_custom_image_sizes');
+
+
+// Load custom blocks.
+
+require get_theme_file_path() . '/school-blocks/school-blocks.php';
+
+// Custom Post Types & Custom Taxonomies.
+
+require get_template_directory() . '/inc/post-types-taxonomies.php';
