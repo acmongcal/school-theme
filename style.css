@@ -49,6 +49,16 @@ body:has(.wp-block-school-blocks-animate-on-scroll) {
 }
 
 
+h1::after {
+    content: '';
+    width: 5rem;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    background-color: var(--wp--preset--color--accent);
+}
+
+
 @media (max-width:820px){
     .staff-container{
         display: grid;
