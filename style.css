@@ -76,18 +76,13 @@ h1::after {
   }
 }
 
-.student-profile {
-  display: flex;
-  align-items: flex-start;
-  gap: 3rem;
-}
-
 .single-fwd-student .wp-block-columns {
   display: flex;
   align-items: flex-start;
   gap: 3rem;
   max-width: 62.5rem;
   margin: 0 auto;
+  padding-top: clamp(2rem, 5vw, 4rem);
 }
 
 .single-fwd-student .wp-block-column:first-child {
