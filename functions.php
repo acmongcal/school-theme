@@ -60,7 +60,7 @@ function school_setup()
 
 	// Custom image sizes
 	add_image_size('student-large', 800, 600, true);
-	add_image_size('student-small', 400, 300, true);
+	add_image_size('student-small', 400, 600, true);
 }
 add_action('after_setup_theme', 'school_setup');
 
